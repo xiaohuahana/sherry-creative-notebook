@@ -9,3 +9,6 @@
 .project{min-width:0}.project-info>div{min-width:0}
 @media(max-width:600px){.game-title{font-size:clamp(24px,7.5vw,32px)}.jala-cover{padding:28px 22px}}
 @media(max-width:600px){.contact h2{font-size:clamp(40px,13vw,68px)}}
+
+/* Keep every writing call-to-action comfortably below its summary content. */
+.writing-detail .inline-link{display:inline-block;margin-top:30px}
