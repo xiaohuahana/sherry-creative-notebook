@@ -1,0 +1,36 @@
+/* Original portfolio typefaces, subset for the text used in this website. */
+@font-face{font-family:"Sherry Inspiration";src:url("assets/fonts/inspiration.woff2?v=pdf2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"Sherry Wanwan";src:url("assets/fonts/wanwan.woff2?v=pdf2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"Sherry Youth";src:url("assets/fonts/youth.woff2?v=pdf2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"Sherry Source Sans";src:url("assets/fonts/source-sans-regular.woff2?v=pdf2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"Sherry Source Sans";src:url("assets/fonts/source-sans-medium.woff2?v=pdf2") format("woff2");font-style:normal;font-weight:500 700;font-display:swap}
+@font-face{font-family:"Sherry Xiukai";src:url("assets/fonts/xiukai.woff2?v=pdf2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+:root{--sans:"Sherry Source Sans","Microsoft YaHei","PingFang SC",sans-serif;--serif:"Sherry Youth","Sherry Inspiration","KaiTi",serif;--display:"Sherry Inspiration","Sherry Youth",cursive;--hand:"Sherry Wanwan","Sherry Inspiration",cursive;--literary:"Sherry Xiukai","STFangsong","FangSong",serif;--typewriter:"Courier New",monospace}
+body{font-family:var(--sans);font-weight:400;text-rendering:optimizeLegibility}
+.hero h1,.contact h2,.toc-top h1,.toc-top h2,.next-project h2{font-family:var(--display);font-weight:400;letter-spacing:.01em;line-height:1.3}
+.case-hero h1{font-family:var(--display);font-weight:400;letter-spacing:.015em;line-height:1.35}
+.handwritten,.greeting,.case-hello,.small-note,.note-sign,.blue-sticker,.polaroid figcaption,.case-cover figcaption,.toc-top>p{font-family:var(--hand);font-weight:400;letter-spacing:.025em}
+.brand{font-family:var(--hand);font-size:27px}.brand-cn{font-family:var(--sans);font-size:10px;letter-spacing:.13em}
+.brand-star,.art-spark,.contact-star,.little-star,.step-icon,.script-cloud,.script-star,.cover-doodle,.film-play,.project-circle{font-family:Arial,var(--sans)}
+.about h2,.section-title h2,.writing-intro h2,.process-head h2,.story-heading h2{font-family:var(--serif);font-weight:400;letter-spacing:.015em}
+.project-info h3,.toc-group-heading h3,.journey-title h3,.story-cards h3,.storyline h3,.scene h3,.emotion-cards h3,.audience-pair h3,.result-note h3,.note-label{font-family:var(--serif);font-weight:400;letter-spacing:.03em}
+.project-info h3{font-size:25px}.toc-group-heading h3{font-size:28px}
+.toc-item>span{font-family:var(--serif);font-size:18px;letter-spacing:.02em}.toc-item small{font-family:var(--sans);font-size:10px;letter-spacing:0;line-height:1.9}
+.writing-list summary>span:nth-child(2){font-family:var(--serif);font-size:24px;letter-spacing:.035em}
+.writing-list summary small{font-family:var(--typewriter);font-size:9px;letter-spacing:.075em}
+.story-quote,.voiceover p,.writing-detail blockquote{font-family:var(--literary);font-weight:400;letter-spacing:.045em}
+.voiceover p{font-size:21px;line-height:2.25}.story-quote{font-size:32px;line-height:1.85}
+.story-quote cite,.film-quote-grid cite{font-family:var(--sans);font-style:normal;letter-spacing:0}
+.film-quote-grid>blockquote{font-family:Georgia,var(--literary);font-style:italic;line-height:1.9}
+.pastry-overlay>span,.game-title,.jala-native>strong,.script-cover>strong{font-family:var(--display);font-weight:400;letter-spacing:.03em}
+.pastry-overlay small{font-family:var(--literary);font-size:12px;letter-spacing:.1em}
+.stats strong,.toc-group-heading>span,.project-number,.writing-num,.chapter-index,.card-seq,.storyline article>span,.result-note>span,.watch-link>span{font-family:var(--hand);font-style:normal;font-weight:400;letter-spacing:.02em}
+.stats strong{font-size:43px}.toc-group-heading>span{font-size:53px}.chapter-index{font-size:90px}.card-seq,.storyline article>span{font-size:25px}
+.eyebrow,.section-kicker,.case-header-label,.hero-top,.brand-small,.cover-index,.step-num,.scene-id,.screen-cue,.dialog-bar>span,.film-tag,.game-title i,.journey-title>span,.audience-pair small,.jala-native>small,.jala-native>b{font-family:var(--typewriter);letter-spacing:.08em}
+.section-kicker .handwritten{font-family:var(--hand);letter-spacing:.02em}
+.film-info h3{font-family:Georgia,var(--serif);letter-spacing:.015em}
+.case-subtitle{font-family:var(--literary);font-size:20px;line-height:1.9;letter-spacing:.03em}
+.primary-button,.contact-nav,.text-button,.inline-link,.journey-tabs button,.skill-chips span,.education,.fact-list,.case-role,.story-body>p,.story-cards p,.storyline p,.scene p,.emotion-cards p,.audience-pair p,.audience-pair li{font-family:var(--sans)}
+@media(max-width:1000px){.toc-item>span{font-size:17px}.project-info h3{font-size:23px}.story-quote{font-size:28px}.voiceover p{font-size:19px}.case-subtitle{font-size:18px}.writing-list summary>span:nth-child(2){font-size:22px}}
+@media(max-width:700px){.brand{font-size:25px}.brand-cn{font-size:9px}.toc-group-heading>span{font-size:46px}.toc-group-heading h3{font-size:27px}.toc-item>span{font-size:20px}.toc-item small{font-size:10px}.writing-list summary>span:nth-child(2){font-size:24px}.writing-list summary small{font-size:8px}.case-hero h1{font-size:43px;line-height:1.45;letter-spacing:0}.case-subtitle{font-size:18px}.story-quote{font-size:26px;line-height:1.9}.voiceover p{font-size:21px;line-height:2.2}.chapter-index{font-size:68px}.stats strong{font-size:39px}.project-info h3{font-size:25px}.card-seq,.storyline article>span{font-size:23px}.hero h1{font-size:clamp(38px,12vw,72px);letter-spacing:0}.toc-top h1,.toc-top h2{font-size:52px}.contact h2{font-size:clamp(38px,12vw,66px)}.story-heading h2{letter-spacing:0}.case-intro{font-size:12px;line-height:2.1}}
+@media(min-width:701px) and (max-height:820px){.toc-screen{padding-top:105px;padding-bottom:28px}.toc-top{margin-bottom:24px}.toc-group-heading{padding:15px 0}.toc-item{padding:7px 0}.toc-bottom{margin-top:20px;padding-top:16px}}
