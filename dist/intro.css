@@ -41,7 +41,6 @@
 .toolbox-label small{font:10px/1.8 var(--sans);color:var(--muted);margin-top:3px}
 .creative-toolbox summary:hover .toolbox-icon{transform:translateY(-3px) rotate(-3deg)}
 .creative-toolbox[open] .toolbox-lid{transform:translate(-6px,-12px) rotate(-22deg)}
-.creative-toolbox[open] .toolbox-closed-note{display:none}
 .toolbox-bubbles{position:absolute;left:128px;top:0;right:0;display:grid;grid-template-columns:repeat(3,max-content);align-content:start;align-items:start;gap:12px;max-width:none;padding:0;min-height:0}
 .toolbox-bubbles span{border:1px solid #a8bfea;background:#eef3ff;color:#2456cd;font-size:11px;padding:5px 15px;border-radius:50px;box-shadow:2px 3px 0 #dce5fa;white-space:nowrap;justify-self:start;animation:bubble-unpack .55s cubic-bezier(.16,.8,.25,1) both;animation-delay:calc(var(--bubble-order,0)*55ms)}
 .toolbox-bubbles span:nth-child(1){--bubble-order:0;--bubble-angle:-5deg}
