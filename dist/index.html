@@ -6,8 +6,8 @@
   <title>燕骁然 Sherry — 创意内容作品集</title>
   <meta name="description" content="燕骁然 Sherry 的创意手账：品牌策划、文案、戏剧与影像。相信 storytelling 的力量，让每一个想法找到自己的表达。">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ctext y='32' font-size='36' fill='%232d63ed'%3E✦%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="stories.css?v=nav2"><script src="app.js?v=nav2" defer></script>
-<link rel="preload" href="assets/fonts/source-sans-regular.woff2?v=pdf3" as="font" type="font/woff2" crossorigin><link rel="preload" href="assets/fonts/inspiration.woff2?v=pdf3" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="typography.css"><script src="font-ready.js" defer></script></head>
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="stories.css?v=nav2"><script src="app.js?v=portrait1" defer></script>
+<link rel="preload" href="assets/fonts/source-sans-regular.woff2?v=pdf3" as="font" type="font/woff2" crossorigin><link rel="preload" href="assets/fonts/inspiration.woff2?v=pdf3" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="typography.css"><script src="font-ready.js" defer></script><link rel="stylesheet" href="intro.css?v=portrait2"><script src="intro-motion.js?v=portrait1" defer></script></head>
 <body>
 <div class="scroll-progress" aria-hidden="true"></div>
 <a class="skip" href="#work">跳转到作品</a>
@@ -31,7 +31,7 @@
     <div class="art-spark spark-one" aria-hidden="true">✧</div><div class="art-spark spark-two" aria-hidden="true">✳</div>
     <div class="mini-poster parallax" data-depth="-0.035"><img src="assets/captain.webp" alt="伦敦原创戏剧 Captain Sokhom 海报" fetchpriority="high"></div>
     <div class="pastry-scrap parallax" data-depth="0.035"><img src="assets/pastry-1.webp" alt="等闲间糕点品牌海报" fetchpriority="high"></div>
-    <div class="portrait-wrap parallax" data-depth="0.025"><figure class="polaroid tilt"><span class="tape"></span><img src="assets/portrait.webp" alt="燕骁然 Sherry 的户外个人照" fetchpriority="high"><figcaption class="handwritten">观察世界，也创造一点 :)</figcaption></figure></div>
+    <div class="portrait-wrap portrait-origin"><figure class="polaroid portrait-card" id="traveling-portrait"><span class="tape"></span><img src="assets/portrait-hq.webp" alt="燕骁然 Sherry 的户外个人照" fetchpriority="high"><figcaption class="handwritten">观察世界，也创造一点 :)</figcaption></figure></div>
     <div class="blue-sticker handwritten" title="灵感正在发生">好奇心<br>永不打烊 <span>↗</span></div>
     <span class="small-note handwritten">a storyteller,<br>in many forms.</span>
     <svg class="little-star" viewBox="0 0 65 65" aria-hidden="true"><path d="m32 3 7 21 23 7-23 8-7 23-8-23L3 31l21-7Z"/></svg>
@@ -39,15 +39,28 @@
   </div>
   <div class="hero-bottom"><a href="#about" class="scroll-hint"><span class="mouse"><i></i></span> 向下探索，故事才刚开始 <span>↓</span></a><span class="hero-disciplines">策划 / 文案 / 影像 / 表达</span></div>
  </section>
- <div class="ticker" aria-hidden="true"><div>STORYTELLING <span>✦</span> 好故事，有很多种表达 <span>✦</span> WORDS INTO WORLDS <span>✦</span> 保持好奇，继续创造 <span>✦</span> STORYTELLING <span>✦</span> 好故事，有很多种表达 <span>✦</span> WORDS INTO WORLDS <span>✦</span> 保持好奇，继续创造 <span>✦</span></div></div>
- <section class="about section-shell" id="about">
+ <section class="about section-shell" id="about" aria-labelledby="about-title">
   <div class="section-kicker reveal"><span>01 / ABOUT ME</span><span class="handwritten">先认识一下吧</span></div>
-  <div class="about-grid">
-   <div class="reveal"><h2>表达的方式很多，<br>我想<span class="blue">多试几种。</span></h2><p class="about-lead">我是燕骁然，也可以叫我 Sherry。<br>文案、视频、图片多面手，相信 storytelling 的重要性，<br>一切都是表达与沟通的工具。</p><div class="education"><span>澳门科技大学 <small>本科</small></span><span class="blue">↗</span><span>伦敦大学国王学院 <small>硕士</small></span></div></div>
-   <div class="about-notes reveal"><div class="note-label">我的创意工具箱 <span>↙</span></div><div class="skill-chips"><span>内容策划</span><span>社媒运营</span><span>品牌文案</span><span>视频脚本</span><span>戏剧制作</span><span>AIGC 探索</span></div><p>2015 年开始接触新媒体；从微博、公众号，<br>一路尝试到直播、播客和 AI 创作。</p><span class="handwritten note-sign">Always curious. Always creating.</span></div>
+  <h2 class="visually-hidden" id="about-title">关于我</h2>
+  <div class="about-grid about-portrait-grid">
+   <div class="about-photo-side"><div class="portrait-destination" aria-hidden="true"><figure class="polaroid portrait-card portrait-static"><span class="tape"></span><img src="assets/portrait-hq.webp" alt="" loading="eager"><figcaption class="handwritten">观察世界，也创造一点 :)</figcaption></figure></div><span class="arrival-star" aria-hidden="true">✧</span></div>
+   <div class="about-intro">
+    <div class="typed-intro">
+     <p class="intro-name" data-type-line>我是燕骁然，也可以叫我 Sherry。</p>
+     <p class="intro-belief" data-type-line>文案、视频、图片多面手，相信 storytelling 的重要性，一切都是表达与沟通的工具。</p>
+     <p class="intro-timeline" data-type-line>2015 年开始接触新媒体；从微博、公众号，一路尝试到直播、播客和 AI 创作。</p>
+    </div>
+    <div class="education"><span>澳门科技大学 <small>本科</small></span><span class="blue">↗</span><span>伦敦大学国王学院 <small>硕士</small></span></div>
+    <details class="creative-toolbox">
+     <summary><span class="toolbox-icon" aria-hidden="true"><span class="toolbox-base"></span><span class="toolbox-lid"></span><span class="toolbox-lock">✦</span></span><span class="toolbox-label"><strong>我的创意工具箱</strong><small class="toolbox-closed-note">点击打开，看看我会什么 ↗</small><small class="toolbox-open-note">再点一下，收起灵感</small></span><span class="toolbox-toggle" aria-hidden="true">+</span></summary>
+     <div class="skill-chips toolbox-bubbles"><span>内容策划</span><span>社媒运营</span><span>品牌文案</span><span>视频脚本</span><span>戏剧制作</span><span>AIGC 探索</span></div>
+    </details>
+    <span class="handwritten note-sign">Always curious. Always creating.</span>
+   </div>
   </div>
   <div class="stats reveal"><div><strong data-count="135000" data-suffix="+">135,000+</strong><span>官博日常话题累计阅读</span></div><div><strong data-count="15" data-suffix="+">15+</strong><span>原创推文，多种内容场景</span></div><div><strong data-count="5" data-suffix=" 场">5 场</strong><span>独立策划并引导应用戏剧</span></div><div><strong data-count="2" data-suffix=" 部">2 部</strong><span>伦敦独立戏剧创意制作</span></div></div>
  </section>
+ <div class="ticker" aria-hidden="true"><div>STORYTELLING <span>✦</span> 好故事，有很多种表达 <span>✦</span> WORDS INTO WORLDS <span>✦</span> 保持好奇，继续创造 <span>✦</span> STORYTELLING <span>✦</span> 好故事，有很多种表达 <span>✦</span> WORDS INTO WORLDS <span>✦</span> 保持好奇，继续创造 <span>✦</span></div></div>
  <section class="toc-screen section-shell" id="contents"><div class="toc-top"><h2><small>CONTENTS / 09 STORIES</small>从哪一页开始？</h2><p class="handwritten">随便翻翻，也欢迎读完每个故事。</p></div><div class="toc-columns"><div class="toc-group"><div class="toc-group-heading"><span>01</span><div><h3>案例分享</h3><small>CASES</small></div></div><a class="toc-item" href="#case-jala"><span>一起“玩”到“伽”<small>伽蓝雇主品牌 · 四阶段传播方案</small></span><b>↗</b></a><a class="toc-item" href="#case-pastry"><span>等闲间<small>原创校园糕点品牌 · 故事与物料</small></span><b>↗</b></a><a class="toc-item" href="#case-theatre"><span>船长苏克<small>伦敦原创戏剧 · 制作与传播</small></span><b>↗</b></a></div><div class="toc-group"><div class="toc-group-heading"><span>02</span><div><h3>文案</h3><small>COPYWRITING</small></div></div><a class="toc-item" href="#writing-va"><span>产品/品牌文案<small>英国艺术博物馆 V&A · 联名首饰品牌文案</small></span><b>↗</b></a><a class="toc-item" href="#writing-seo"><span>SEO 文案<small>BC 雅思 · SEO 长图文</small></span><b>↗</b></a><a class="toc-item" href="#writing-sports"><span>To B 文案<small>国际乒联男女世界杯 / 澳门世界乒乓球锦标赛</small></span><b>↗</b></a><a class="toc-item" href="#writing-dimoo"><span>视频脚本文案<small>泡泡玛特 DIMOO ·《我与我相处》</small></span><b>↗</b></a></div><div class="toc-group"><div class="toc-group-heading"><span>03</span><div><h3>影像</h3><small>MOVING STORIES</small></div></div><a class="toc-item" href="#film-visa"><span>Visa, Drama & Other Disasters<small>伦敦原创戏剧 · 系列剧宣</small></span><b>↗</b></a><a class="toc-item" href="#film-documentary"><span>Name<small>个人纪录片 · 2024 / 13′</small></span><b>↗</b></a></div></div><div class="toc-bottom"><a href="index.html#about">认识一下 Sherry ↗</a><span>案例 3 / 文案 4 / 影像 2</span><a href="index.html#contact">聊聊下一个灵感 ↗</a></div></section>
  <section class="work section-shell" id="work">
   <div class="section-kicker"><span>02 / SELECTED CASES</span><span>策略 × 内容 × 落地</span></div>
