@@ -1,10 +1,10 @@
 /* Original portfolio typefaces, subset for the text used in this website. */
-@font-face{font-family:"Sherry Inspiration";src:url("assets/fonts/inspiration.woff2?v=pdf2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
-@font-face{font-family:"Sherry Wanwan";src:url("assets/fonts/wanwan.woff2?v=pdf2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
-@font-face{font-family:"Sherry Youth";src:url("assets/fonts/youth.woff2?v=pdf2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
-@font-face{font-family:"Sherry Source Sans";src:url("assets/fonts/source-sans-regular.woff2?v=pdf2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
-@font-face{font-family:"Sherry Source Sans";src:url("assets/fonts/source-sans-medium.woff2?v=pdf2") format("woff2");font-style:normal;font-weight:500 700;font-display:swap}
-@font-face{font-family:"Sherry Xiukai";src:url("assets/fonts/xiukai.woff2?v=pdf2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"Sherry Inspiration";src:url("assets/fonts/inspiration.woff2?v=pdf3") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"Sherry Wanwan";src:url("assets/fonts/wanwan.woff2?v=pdf3") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"Sherry Youth";src:url("assets/fonts/youth.woff2?v=pdf3") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"Sherry Source Sans";src:url("assets/fonts/source-sans-regular.woff2?v=pdf3") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"Sherry Source Sans";src:url("assets/fonts/source-sans-medium.woff2?v=pdf3") format("woff2");font-style:normal;font-weight:500 700;font-display:swap}
+@font-face{font-family:"Sherry Xiukai";src:url("assets/fonts/xiukai.woff2?v=pdf3") format("woff2");font-style:normal;font-weight:400;font-display:swap}
 :root{--sans:"Sherry Source Sans","Microsoft YaHei","PingFang SC",sans-serif;--serif:"Sherry Youth","Sherry Inspiration","KaiTi",serif;--display:"Sherry Inspiration","Sherry Youth",cursive;--hand:"Sherry Wanwan","Sherry Inspiration",cursive;--literary:"Sherry Xiukai","STFangsong","FangSong",serif;--typewriter:"Courier New",monospace}
 body{font-family:var(--sans);font-weight:400;text-rendering:optimizeLegibility}
 .hero h1,.contact h2,.toc-top h1,.toc-top h2,.next-project h2{font-family:var(--display);font-weight:400;letter-spacing:.01em;line-height:1.3}
