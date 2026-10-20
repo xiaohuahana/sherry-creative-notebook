@@ -14,7 +14,7 @@
   {type:'postcard',name:'场景化感官',object:'夏日明信片',label:'03 / A SUMMER FEELING',body:'调动视觉想象，让读者代入佩戴首饰的氛围感，唤起情绪共鸣。',file:'summer-snippet',caption:'佩戴画面与夏日晚霞、微光、动作的感官联想',alt:'原文截图：佩戴手链的人物图与浅黄色夏日感官描写'},
   {type:'gift',name:'同时覆盖自用与送礼',object:'礼盒',label:'04 / FOR ME, FOR YOU',body:'文案既要支持“为自己购买”，也要支持“把它送给重要的人”。',file:'gift-snippet',caption:'开篇同时连接自我犒赏与礼物心意',alt:'原文截图：橙色开篇中自用、送礼与日常夏日造型的完整段落'}
  ];
- window.VA_STRATEGY_HTML=`<div class="va-strategy-intro"><p>认识设计来源，让艺术走进日常；再把夏日的佩戴想象，写成送给自己或他人的心意。</p><span class="va-desktop-hint">把鼠标停在小物上，翻开原文的一角 ↘</span><span class="va-mobile-hint">向下翻阅，点击小物可以再看一次 ↘</span></div><div class="va-choices">${choices.map((c,i)=>`<article class="va-choice va-choice-${c.type}" data-va-choice="${i}"><div class="va-choice-story"><div class="va-choice-heading"><span>${c.label}</span><h3>${c.name}</h3></div><button class="va-object-button" type="button" aria-expanded="false" aria-controls="va-evidence-${i}" aria-label="展开${c.object}及对应原文截图">${objectArt(c.type)}<span class="va-object-caption">${c.object} <i>↗</i></span></button><p class="va-choice-description">${c.body}</p></div><figure class="va-evidence" id="va-evidence-${i}"><div class="va-evidence-label"><span>ARTICLE FRAGMENT / 原文局部</span><b>0${i+1}</b></div><button class="va-screenshot" type="button" data-zoom="assets/va/${c.file}.webp" aria-label="放大查看${c.alt}"><img src="assets/va/${c.file}.webp" alt="${c.alt}" loading="lazy" width="900" height="${[1685,628,1444,931][i]}"><span>点击放大阅读 ↗</span></button><figcaption>${c.caption}</figcaption></figure></article>`).join('')}</div><div class="va-packing" aria-label="将四个写作策略装进一篇完整文章"><div class="va-packing-sticky"><div class="va-packing-heading"><span class="eyebrow">FOUR CHOICES, ONE STORY</span><h3>把夏日的艺术，<br>装进一份心意。</h3><p>让设计、日常与感受，在一篇文章里相遇。</p></div><div class="va-packing-stage"><span class="va-pack-orbit" aria-hidden="true"></span>${choices.slice(0,3).map((c,i)=>`<div class="va-pack-item va-pack-${i}" aria-hidden="true">${objectArt(c.type)}</div>`).join('')}<a class="va-final-gift" href="${originalArticle}" target="_blank" rel="noopener noreferrer" aria-label="打开微信原文：V&A种草，八月戴点艺术感">${objectArt('gift')}<span class="va-final-caption"><strong>打开这份夏日心意 ↗</strong><small>V&A种草 丨 八月，“戴”点艺术感</small></span></a></div><span class="va-pack-scroll">再往下，把故事打包 ↓</span><a class="va-return" href="index.html#writing-va">返回产品/品牌文案 ↩</a></div></div>`;
+ window.VA_STRATEGY_HTML=`<div class="va-strategy-intro"><p>认识设计来源，让艺术走进日常；再把夏日的佩戴想象，写成送给自己或他人的心意。</p><span class="va-desktop-hint">把鼠标停在小物上，翻开原文的一角 ↘</span><span class="va-mobile-hint">点击小物，展开对应的原文截图 ↘</span></div><div class="va-choices">${choices.map((c,i)=>`<article class="va-choice va-choice-${c.type}" data-va-choice="${i}"><div class="va-choice-story"><div class="va-choice-heading"><span>${c.label}</span><h3>${c.name}</h3></div><button class="va-object-button" type="button" aria-expanded="false" aria-controls="va-evidence-${i}" aria-label="展开${c.object}及对应原文截图">${objectArt(c.type)}</button><p class="va-choice-description">${c.body}</p></div><figure class="va-evidence" id="va-evidence-${i}"><div class="va-evidence-label"><span>ARTICLE FRAGMENT / 原文局部</span><b>0${i+1}</b></div><button class="va-screenshot" type="button" data-zoom="assets/va/${c.file}.webp" aria-label="放大查看${c.alt}"><img src="assets/va/${c.file}.webp" alt="${c.alt}" loading="lazy" width="900" height="${[1685,628,1444,931][i]}"><span>点击放大阅读 ↗</span></button><figcaption>${c.caption}</figcaption></figure></article>`).join('')}</div><div class="va-packing" aria-label="将四个写作策略装进一篇完整文章"><div class="va-packing-sticky"><div class="va-packing-heading"><span class="eyebrow">FOUR CHOICES, ONE STORY</span><h3>把夏日的艺术，<br>装进一份心意。</h3><p>让设计、日常与感受，在一篇文章里相遇。</p></div><div class="va-packing-stage"><span class="va-pack-orbit" aria-hidden="true"></span>${choices.slice(0,3).map((c,i)=>`<div class="va-pack-item va-pack-${i}" aria-hidden="true">${objectArt(c.type)}</div>`).join('')}<a class="va-final-gift" href="${originalArticle}" target="_blank" rel="noopener noreferrer" aria-label="打开微信原文：V&A种草，八月戴点艺术感">${objectArt('gift')}<span class="va-final-caption"><strong>打开这份夏日心意 ↗</strong><small>V&A种草 丨 八月，“戴”点艺术感</small></span></a></div><span class="va-pack-scroll">再往下，把故事打包 ↓</span><a class="va-return" href="index.html#writing-va">返回产品/品牌文案 ↩</a></div></div>`;
 
  function init(){
   if(new URLSearchParams(location.search).get('project')!=='va')return;
@@ -24,21 +24,27 @@
   const calm=matchMedia('(prefers-reduced-motion:reduce)'),touch=matchMedia('(hover:none), (pointer:coarse)'),chapter=document.querySelector('#chapter-2');
   let complete=false;try{complete=sessionStorage.getItem('va-article-packed')==='yes';}catch{}
   const finish=()=>{complete=true;packing.classList.add('is-packed');packing.style.setProperty('--pack',1);try{sessionStorage.setItem('va-article-packed','yes');}catch{}};
-  const reveal=row=>{row.classList.add('va-is-revealed');row.querySelector('.va-object-button').setAttribute('aria-expanded','true');};
+  const compact=()=>touch.matches||innerWidth<=700;
+  const choicesRegion=document.querySelector('.va-choices');
+  const hide=row=>{row.classList.remove('va-is-revealed');row.querySelector('.va-object-button').setAttribute('aria-expanded','false');};
+  const closeDesktop=()=>{if(compact())return;rows.forEach(hide);};
+  const reveal=row=>{if(!compact())rows.filter(other=>other!==row).forEach(hide);row.classList.add('va-is-revealed');row.querySelector('.va-object-button').setAttribute('aria-expanded','true');};
   const play=row=>{reveal(row);row.classList.remove('va-playing');requestAnimationFrame(()=>requestAnimationFrame(()=>row.classList.add('va-playing')));};
   rows.forEach(row=>{
-   row.addEventListener('pointerenter',()=>{if(!touch.matches){play(row);}});
-   row.addEventListener('focusin',()=>reveal(row));
+   row.addEventListener('pointerenter',()=>{if(!compact()){play(row);}});
+   row.addEventListener('pointerleave',()=>{if(!compact())hide(row);});
+   row.addEventListener('focusin',()=>{if(!compact())reveal(row);});
+   row.addEventListener('focusout',e=>{if(!compact()&&!row.contains(e.relatedTarget))hide(row);});
    row.querySelector('.va-object-button').addEventListener('click',()=>play(row));
   });
-  const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('va-in-view');if((touch.matches||innerWidth<=700)&&!e.target.dataset.vaPlayed){e.target.dataset.vaPlayed='yes';play(e.target);}}}),{threshold:.24});
-  rows.forEach(row=>observer.observe(row));
+  choicesRegion.addEventListener('pointerleave',closeDesktop);
+  choicesRegion.addEventListener('focusout',e=>{if(!choicesRegion.contains(e.relatedTarget))closeDesktop();});
   const lerp=(a,b,t)=>a+(b-a)*t,clamp=v=>Math.max(0,Math.min(1,v)),smooth=t=>t*t*(3-2*t),range=(p,a,b)=>smooth(clamp((p-a)/(b-a)));
   let queued=false;
   function render(){
    queued=false;const r=packing.getBoundingClientRect(),height=innerHeight,p=clamp(-r.top/Math.max(1,r.height-height));
    root.classList.toggle('va-reading-strategy',chapter.getBoundingClientRect().top<=85);
-   if(calm.matches){rows.forEach(reveal);packing.classList.add('va-calm');return;}
+   if(calm.matches){packing.classList.add('va-calm');return;}
    packing.classList.remove('va-calm');
    if(p>=.995&&!complete)finish();
    const stage=packing.querySelector('.va-packing-stage').getBoundingClientRect(),mobile=innerWidth<=700,w=stage.width,h=stage.height;
@@ -58,7 +64,7 @@
   const schedule=()=>{if(!queued){queued=true;requestAnimationFrame(render);}};
   if(complete){finish();packing.classList.add('va-packed-return');}
   root.classList.add('va-interactions-ready');
-  addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);addEventListener('pageshow',schedule);calm.addEventListener('change',schedule);touch.addEventListener('change',()=>{if(touch.matches)rows.filter(row=>row.classList.contains('va-in-view')).forEach(play);});
+  addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);addEventListener('pageshow',schedule);calm.addEventListener('change',schedule);
   document.fonts?.ready.then(schedule);render();
  }
  document.addEventListener('DOMContentLoaded',init);
