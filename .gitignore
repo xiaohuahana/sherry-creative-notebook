@@ -1,0 +1,29 @@
+# Dependencies and build caches
+node_modules/
+.cache/
+.parcel-cache/
+.vite/
+.next/
+coverage/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Temporary files and editor state
+tmp/
+temp/
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Deployment archives generated outside the website source
+*.zip
