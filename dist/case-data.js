@@ -36,10 +36,8 @@ window.CASES = {
   section('02 / WRITING STRATEGY','写作策略',window.VA_STRATEGY_HTML,'va-strategy')
  ]},
  seo:{group:'writing',category:'SEO 文案',title:'SEO 文案',subtitle:'BC 雅思 · SEO 长图文',role:'竞品调研 / 用户利益点提炼 / SEO 文案',cover:'seo',intro:'面向计划英、港留学和备考雅思的学生，围绕 BC、IDP 与 UKVI 的比较和疑问组织 SEO 长图文，让搜索意图成为文章结构的起点。',sections:[
-  section('01 / SEARCH INTENT','先看见读者正在搜什么。',cards([['机构选择','纠结 BC 与 IDP，希望理解两者差异，帮助自己做报考选择。'],['考试类型','对 UKVI 考试缺少了解，需要更清晰的解释与信息组织。'],['难度焦虑','担心考试难度，搜索中同时带着信息需求和备考情绪。']])+facts([['业务目标','布局雅思对比类长尾词，为 BC 雅思争取自然搜索流量'],['内容定位','以专业人士视角组织信息，用笃定、专业的口吻增强信服力']])) ,
-  section('02 / BEFORE WRITING','动笔之前，先把信息与话术准备好。',`<div class="storyline three"><article><span>01</span><h3>竞品调研</h3><p>了解比较类内容如何表达，识别考生关注的问题。</p></article><article><span>02</span><h3>用户利益点</h3><p>寻找己方能够回应用户需求的利益点，确定文章重心。</p></article><article><span>03</span><h3>共享话术库</h3><p>将可复用表达积累进共享库，让后续写作更一致。</p></article></div>`+para('调研、利益点与共享话术共同构成写作准备，再由关键词布局决定文章如何回应不同层次的搜索需求。')),
-  section('03 / CONTENT ARCHITECTURE','一个核心问题，连接一组长尾疑问。',`<div class="keyword-map"><span class="keyword-core">BC 与 IDP 的差异</span><div><span>BC 和 IDP 差异在哪</span><span>BC 与 IDP 的本质分野</span><span>UKVI 考试相关疑问</span><span>考试难度与备考焦虑</span></div></div>`+cards([['痛点开篇','先回应留学考生当下的焦虑，让读者快速识别内容与自己的相关性。'],['专业表达','采用专业人士视角与清晰组织，降低信息理解成本。'],['关键词布局','核心词锁定机构比较，同时覆盖相关长尾词与具体问题。']])) ,
-  section('04 / THE WORK','从策略到成稿。',para('以对比信息承接搜索意图，让关键词、问题与解释形成清晰的阅读顺序。')+artwork('seo','BC 雅思 SEO 内容物料','原 SEO 长图文中的内容物料。','wide-art'),'gallery')
+  section('01 / THE INSIGHT','每一次搜索，都是一次商业机会。',window.SEO_INSIGHT_HTML,'seo-insight'),
+  section('02 / WRITING STRATEGY','写作策略',window.SEO_STRATEGY_HTML,'seo-strategy')
  ]},
  sports:{links:[{href:'https://mp.weixin.qq.com/s/0PQ5PXWHn8oU4bEWgNP_UQ',label:'阅读微信原文'}],group:'writing',category:'To B 文案',title:'To B 文案',subtitle:'国际乒联男女世界杯 / 澳门世界乒乓球锦标赛',role:'B 端项目叙事 / 品牌权益表达 / 赛事案例沉淀',cover:'sports',intro:'围绕 2024 年国际乒联男女世界杯与 2023 年澳门世界乒乓球锦标赛，把展示执行、现场互动与城市文旅联动转化为不同合作方能够理解的价值。',sections:[
   section('01 / THE BRIEF','同一个赛事项目，回应两类合作方。',facts([['面向谁','赛事赞助商、文旅政企、体育行业 B 端合作伙伴与赛事主办方'],['对内任务','复盘落地成果，沉淀全流程体育展示执行能力'],['对外任务','具象化品牌曝光、现场互动、政企联动权益，强化合作信任'],['后续用途','形成商务拓客与后续赛事、品牌联名合作的案例材料']])) ,
