@@ -7,7 +7,7 @@ html.va-reading-strategy{scroll-snap-type:none}
 .va-strategy-intro p{max-width:620px;font-size:14px;line-height:2.1;color:var(--muted)}
 .va-strategy-intro>span{font-family:var(--hand);color:var(--blue);font-size:19px;line-height:1.8}
 .va-mobile-hint{display:none}
-.va-choice{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9%;align-items:center;min-height:720px;padding:65px 3%;border-top:1px solid var(--line);position:relative;isolation:isolate}
+.va-choice{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9%;align-items:center;min-height:0;padding:24px 3%;position:relative;isolation:isolate}
 .va-choice:nth-child(even) .va-choice-story{grid-column:2;grid-row:1}
 .va-choice:nth-child(even) .va-evidence{grid-column:1;grid-row:1}
 .va-choice-heading>span{font:10px/1.8 var(--typewriter);letter-spacing:.1em;color:var(--muted)}
@@ -68,13 +68,13 @@ html.va-reading-strategy{scroll-snap-type:none}
 .va-interactions-ready .va-is-revealed .va-evidence{opacity:1;transform:none;clip-path:inset(0)}
 .va-evidence-label{display:flex;justify-content:space-between;align-items:center;font:8px/1.8 var(--typewriter);letter-spacing:.08em;color:var(--muted);margin-bottom:10px}
 .va-evidence-label>b{font:24px/1 var(--hand);font-weight:400;color:var(--blue)}
-.va-screenshot{display:block;width:100%;padding:0;background:transparent;border:0;position:relative;cursor:zoom-in;box-shadow:8px 13px 25px #26301d16;text-align:left;overflow:hidden}
+.va-screenshot{display:block;width:100%;padding:0;background:transparent;border:0;position:relative;box-shadow:8px 13px 25px #26301d16;overflow:hidden}
 .va-screenshot>img{width:100%;height:auto;display:block;border:1px solid #d8dbd0}
 .va-choice-archive .va-evidence{max-width:320px}
 .va-choice-postcard .va-evidence{max-width:350px}
 .va-screenshot>span{position:absolute;left:0;right:0;bottom:0;font:10px/1.7 var(--sans);background:#f8f7f2ef;color:var(--blue);padding:9px 12px;backdrop-filter:blur(5px)}
 .va-evidence figcaption{font-size:10px;line-height:1.9;color:var(--muted);margin-top:16px}
-.va-packing{position:relative;height:235svh;border-top:1px solid var(--line);margin-top:15px}
+.va-packing{position:relative;height:235svh;margin-top:0}
 .va-packing-sticky{height:100svh;min-height:0;position:sticky;top:0;overflow:hidden;padding-top:110px}
 .va-packing-heading{position:relative;z-index:3;pointer-events:none}
 .va-packing-heading>.eyebrow{font-size:9px;color:var(--blue)}
@@ -109,7 +109,7 @@ html.va-reading-strategy{scroll-snap-type:none}
 @keyframes va-jewel-open{0%{transform:none}100%{transform:translateY(-36px) rotateX(67deg)}}
 @keyframes va-postcard-open{0%{transform:none}55%{transform:translate(-18px,0) rotate(-9deg)}100%{transform:translate(-10px,4px) rotate(-6deg)}}
 @keyframes va-gift-open{0%{transform:none}100%{transform:translateY(-43px) rotate(-8deg)}}
-@media(max-width:1000px){.va-choice{gap:6%;padding-left:0;padding-right:0;min-height:650px}.va-choice-heading h3{font-size:32px}.va-strategy-intro{gap:25px}.va-strategy-intro p{font-size:12px;max-width:52%}.va-strategy-intro>span{font-size:16px}.va-object-art{max-width:100%}.va-choice-description{font-size:13px}.va-choice-archive .va-evidence{max-width:290px}.va-packing-heading h3{font-size:44px}}
+@media(max-width:1000px){.va-choice{gap:6%;padding-left:0;padding-right:0;min-height:0}.va-choice-heading h3{font-size:32px}.va-strategy-intro{gap:25px}.va-strategy-intro p{font-size:12px;max-width:52%}.va-strategy-intro>span{font-size:16px}.va-object-art{max-width:100%}.va-choice-description{font-size:13px}.va-choice-archive .va-evidence{max-width:290px}.va-packing-heading h3{font-size:44px}}
 @media(max-width:700px){
  .va-page #chapter-2{padding-top:110px}
  .va-strategy-intro{display:block;margin-bottom:30px}
@@ -183,6 +183,11 @@ html.va-reading-strategy{scroll-snap-type:none}
  .va-pack-item{width:100px;height:105px}
  .va-pack-item .va-object-art{transform:scale(.4);transform-origin:0 0;max-width:none}
 }
+.va-page #overview{border-bottom:1px solid var(--line)}
+.va-page #chapter-2{border-bottom:0}
+.va-choice .va-object-button{width:max-content;height:auto;max-width:100%;margin:24px auto 22px}
+.va-choice .va-object-button>.va-object-art{margin:0;max-width:100%}
+@media(max-width:700px){.va-choice{padding:16px 0 22px}}
 @media(prefers-reduced-motion:reduce){
  .va-choice *,.va-choice *::before,.va-choice *::after{animation:none!important;transition:none!important}
  .va-interactions-ready .va-is-revealed .va-evidence{opacity:1;transform:none;clip-path:none}

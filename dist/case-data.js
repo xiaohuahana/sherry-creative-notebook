@@ -33,7 +33,7 @@ window.CASES = {
  ]},
  va:{links:[{href:'https://mp.weixin.qq.com/s/zOBkYEziMBpS5jZa-_b0VQ',label:'阅读微信原文'}],group:'writing',category:'产品/品牌文案',title:'产品/品牌文案',subtitle:'英国艺术博物馆 V&A · 联名首饰品牌文案',role:'品牌种草文案 / 文化叙事 / 场景表达',cover:'va-1',intro:'面向追求审美与艺术感的年轻女性，把馆藏历史和首饰设计连接起来。不只介绍一件商品，而是让读者想象：艺术如何进入自己的生活，也如何成为一份有心意的礼物。',sections:[
   section('01 / THE INSIGHT','文化消费，给生活添点情趣',facts([['项目背景','V&A 与首饰品牌联名产品，需进行夏季日常营销'],['目标受众','追求审美与艺术感的年轻女性消费者'],['核心问题','如何让首饰产品体现文化价值？'],['写作目标','结合时令，弱化硬性销售感，建立文化价值、情绪价值和送礼联想'],['核心洞察','消费者想要的不只是精美首饰，也希望得到一种可佩戴、可分享的艺术体验']])) ,
-  section('02 / WRITING STRATEGY','四个写作选择，把文化写成生活里的情趣。',window.VA_STRATEGY_HTML,'va-strategy')
+  section('02 / WRITING STRATEGY','写作策略',window.VA_STRATEGY_HTML,'va-strategy')
  ]},
  seo:{group:'writing',category:'SEO 文案',title:'SEO 文案',subtitle:'BC 雅思 · SEO 长图文',role:'竞品调研 / 用户利益点提炼 / SEO 文案',cover:'seo',intro:'面向计划英、港留学和备考雅思的学生，围绕 BC、IDP 与 UKVI 的比较和疑问组织 SEO 长图文，让搜索意图成为文章结构的起点。',sections:[
   section('01 / SEARCH INTENT','先看见读者正在搜什么。',cards([['机构选择','纠结 BC 与 IDP，希望理解两者差异，帮助自己做报考选择。'],['考试类型','对 UKVI 考试缺少了解，需要更清晰的解释与信息组织。'],['难度焦虑','担心考试难度，搜索中同时带着信息需求和备考情绪。']])+facts([['业务目标','布局雅思对比类长尾词，为 BC 雅思争取自然搜索流量'],['内容定位','以专业人士视角组织信息，用笃定、专业的口吻增强信服力']])) ,
