@@ -1,0 +1,234 @@
+/* Fluid reading sizes shared by the home page, directory and every case study.
+   Keep the existing typefaces and display headings; scale the reading layers. */
+:root {
+  --read-body: clamp(1rem, .88rem + .36vw, 1.3125rem);
+  --read-support: clamp(.875rem, .79rem + .25vw, 1.125rem);
+  --read-meta: clamp(.75rem, .69rem + .18vw, .9375rem);
+  --read-action: clamp(.9375rem, .86rem + .18vw, 1.0625rem);
+  --read-lead: clamp(1.125rem, 1rem + .35vw, 1.5rem);
+  --read-heading: clamp(1.625rem, 1.35rem + .65vw, 2.125rem);
+}
+
+body { font-size: var(--read-body); }
+
+/* Navigation and small labels remain subordinate, without becoming tiny. */
+.site-header nav, .contact-nav { font-size: var(--read-action); }
+.site-header nav { gap: clamp(18px, 2vw, 32px); }
+.site-header nav a, .contact-nav { white-space: nowrap; }
+.brand-cn { font-size: .75rem; }
+.brand-small { font-size: .6875rem; }
+.eyebrow, .section-kicker, .hero-top, .hero-top .edition,
+.case-header-label, .story-heading .eyebrow, .case-hero-copy > .eyebrow,
+.toc-top h1 small, .toc-top h2 small, .toc-group-heading small,
+.writing-list summary small, .project-meta, .cover-index, .step-num,
+.film-tag, .scene-id, .screen-cue, .journey-title > span,
+.audience-pair small, .published-work small {
+  font-size: var(--read-meta);
+  line-height: 1.65;
+}
+.hero .eyebrow { font-size: var(--read-meta); }
+.hero-bottom, .toc-bottom, .toc-float, .chapter-next,
+footer > span, footer > a:last-child {
+  font-size: var(--read-support);
+  line-height: 1.75;
+}
+.toc-float { padding: 9px 16px; }
+.section-kicker { gap: 24px; flex-wrap: wrap; }
+.section-kicker .handwritten, .section-title > .handwritten {
+  font-size: clamp(1.125rem, 1rem + .35vw, 1.5rem);
+}
+
+/* Home page: prose, captions, summaries and interactive writing previews. */
+.hero-desc, .about-lead, .writing-intro > p, .writing-detail,
+.writing-detail p, .project-info p, .film-info p,
+.process-steps p, .contact-note > p, .about-notes p {
+  font-size: var(--read-body);
+  line-height: 1.9;
+}
+.hero-desc { letter-spacing: .04em; }
+.typed-intro .intro-belief { font-size: var(--read-body); line-height: 1.95; }
+.typed-intro .intro-timeline { font-size: var(--read-support); line-height: 1.95; }
+.about-intro .education { font-size: var(--read-support); gap: 10px 14px; }
+.education small { font-size: var(--read-meta); }
+.stats span { font-size: var(--read-support); line-height: 1.8; }
+.stats > div { min-width: 0; }
+.toc-summary { font-size: var(--read-body); padding-right: 28px; }
+.toc-group { min-height: 210px; padding-bottom: 42px; }
+.toc-group-heading h3 { font-size: var(--read-heading); }
+.toc-group-heading { gap: 20px; }
+.toc-item small { font-size: var(--read-support); }
+.toc-item > span { font-size: var(--read-lead); }
+.writing-list summary > span:nth-child(2) { font-size: var(--read-heading); min-width: 0; }
+.writing-list summary { gap: 20px; }
+.writing-list summary small { overflow-wrap: anywhere; }
+.writing-num { font-size: var(--read-lead); flex: none; }
+.writing-detail { margin-left: 48px; padding-bottom: 32px; }
+.writing-detail blockquote { font-size: var(--read-lead); line-height: 1.85; }
+.tags { flex-wrap: wrap; }
+.tags span { font-size: var(--read-meta); padding: 3px 9px; }
+.project-info h3, .film-info h3, .process-steps h3 { font-size: var(--read-heading); }
+.project-info p { max-width: 42ch; }
+.film-info h3 { line-height: 1.55; overflow-wrap: anywhere; }
+.film-tag { max-width: calc(100% - 30px); }
+.game-title i { font-size: var(--read-meta); letter-spacing: .06em; white-space: normal; }
+.game-levels { font-size: var(--read-support); width: 90%; line-height: 1.65; }
+.award { font-size: var(--read-meta); }
+.pastry-overlay small { font-size: var(--read-support); }
+.theatre-caption > span:first-child { font-size: var(--read-support); }
+.contact-links small { font-size: var(--read-meta); }
+.contact-links a, .contact-links button {
+  font-size: clamp(1.375rem, 1.15rem + .5vw, 1.875rem);
+  overflow-wrap: anywhere;
+}
+.primary-button, .text-button, .inline-link,
+.dialog-bar button, .toast { font-size: var(--read-action); line-height: 1.6; }
+.primary-button, .contact-nav { min-height: 44px; }
+.text-button, .inline-link { display: inline-block; padding-top: 8px; padding-bottom: 8px; }
+
+/* Open toolbox: give the larger labels a separate lane above the moving lid. */
+.creative-toolbox { max-width: none; min-height: 235px; }
+.toolbox-label strong { font-size: clamp(1.4375rem, 1.25rem + .5vw, 1.875rem); }
+.toolbox-label small { display: block; font-size: var(--read-meta); line-height: 1.8; }
+.toolbox-bubbles { grid-template-columns: repeat(2, max-content); gap: 12px; }
+.toolbox-bubbles span { font-size: var(--read-meta); padding: 5px 12px; }
+.about-intro .note-sign { font-size: clamp(1rem, .9rem + .35vw, 1.375rem); }
+
+/* Case studies: keep facts and long paragraphs legible across every project. */
+.case-subtitle { font-size: var(--read-lead); }
+.case-intro, .story-body > p, .story-cards > article p,
+.storyline p, .audience-pair p, .audience-pair li,
+.emotion-cards p, .scene p, .journey-content dl > div {
+  font-size: var(--read-body);
+  line-height: 1.95;
+}
+.case-intro { max-width: 60ch; }
+.story-body > p { max-width: 68ch; }
+.case-role { font-size: var(--read-support); line-height: 1.9; }
+.case-role small { font-size: var(--read-meta); }
+.fact-list > div {
+  grid-template-columns: minmax(90px, .28fr) minmax(0, 1fr);
+  font-size: var(--read-body);
+  gap: 20px;
+  line-height: 1.9;
+}
+.fact-list dt, .journey-content dt { font-size: var(--read-support); }
+.fact-list dd { min-width: 0; overflow-wrap: anywhere; }
+.story-cards > article h3, .storyline h3, .emotion-cards h3, .scene h3 {
+  font-size: var(--read-heading);
+  line-height: 1.65;
+}
+.story-quote cite, .film-quote-grid cite, .scene > small,
+.artwork figcaption, .audience-source figcaption, .award-certificate figcaption,
+.result-note p, .journey-title p, .journey-content > small,
+.keyword-map > div > span, .film-player figcaption, .zoom-note {
+  font-size: var(--read-support);
+  line-height: 1.85;
+}
+.result-note small, .film-player figcaption small, .dialog-bar > span {
+  font-size: var(--read-meta);
+  white-space: normal;
+}
+.zoom-art > span { font-size: var(--read-meta); }
+.journey-tabs button { font-size: var(--read-action); }
+.journey-title p { line-height: 1.9; }
+.journey-content dl > div { grid-template-columns: 5em minmax(0, 1fr); }
+.audience-pair strong { font-size: var(--read-support); line-height: 1.85; }
+.published-work strong { font-size: var(--read-body); }
+.next-project > p { font-size: var(--read-lead); line-height: 1.9; }
+.next-actions { flex-wrap: wrap; gap: 18px 30px; }
+.voiceover p { font-size: clamp(1.3125rem, 1.05rem + .55vw, 1.6875rem); line-height: 2.1; }
+
+/* Larger evidence captions, without changing the drawn objects or animation geometry. */
+.va-strategy-intro p, .va-choice-description, .va-packing-heading p,
+.seo-brief dd, .seo-core-insight > div, .seo-strategy-lead,
+.seo-material > p, .seo-desk-finish > p {
+  font-size: var(--read-body);
+  line-height: 1.95;
+}
+.va-evidence figcaption, .seo-brief dt, .seo-thoughts p,
+.seo-checks > li, .seo-checks .seo-check-group, .seo-checks .seo-subtask,
+.seo-search-invitation, .seo-table-detail {
+  font-size: var(--read-support);
+  line-height: 1.85;
+}
+.va-evidence-label, .va-screenshot > span, .va-final-caption small,
+.va-pack-scroll, .va-return, .va-packing-heading > .eyebrow,
+.seo-relationship, .seo-folder-heading, .seo-folder-tab,
+.seo-folder-bottom > span, .seo-material-heading > span,
+.seo-keyword-note small, .seo-research-tag, .seo-crop::after {
+  font-size: var(--read-meta);
+  line-height: 1.7;
+}
+.seo-brief > div { grid-template-columns: 5em minmax(0, 1fr); }
+.seo-checks > li { padding-top: 7px; padding-bottom: 7px; }
+.seo-research-tag { max-width: 90%; }
+.seo-table-detail summary { font-size: var(--read-action); }
+
+@media (min-width: 701px) and (max-width: 1100px) {
+  .brand-small { display: none; }
+  .site-header { gap: 16px; }
+  .site-header nav { gap: 16px; }
+  .site-header .contact-nav { padding-inline: 12px; }
+  .about-portrait-grid { gap: 5%; grid-template-columns: .8fr 1.2fr; }
+  .writing-grid { grid-template-columns: .8fr 1.2fr; gap: 5%; }
+  .story-cards:has(article:nth-child(4)) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fact-list { grid-template-columns: 1fr; }
+  .toc-columns { gap: 24px; }
+  .toc-group-heading { gap: 12px; flex-wrap: wrap; }
+  .toc-group-heading > span { font-size: 46px; }
+  .toc-group-heading h3 { font-size: 28px; }
+  .process-steps { grid-template-columns: 1fr 25px 1fr 25px 1fr; gap: 12px; }
+  .result-note-award { grid-template-columns: auto minmax(0, 1fr); }
+  .result-note-award .award-certificate { grid-column: 2; justify-self: start; }
+}
+
+@media (max-width: 700px) {
+  .hero-top { gap: 15px; }
+  .hero .eyebrow { letter-spacing: .035em; }
+  .hero-bottom { flex-wrap: wrap; }
+  .section-kicker { gap: 10px 18px; }
+  .section-kicker .handwritten, .film-section .section-kicker > span:last-child {
+    font-size: var(--read-support);
+  }
+  .contact .section-kicker .handwritten { font-size: var(--read-support); }
+  .toc-group { min-height: 180px; }
+  .toc-group-heading { flex-wrap: nowrap; }
+  .toc-bottom { gap: 14px 20px; }
+  .writing-list summary { gap: 14px; }
+  .writing-list summary > span:nth-child(2) { font-size: 26px; letter-spacing: .015em; }
+  .writing-detail { margin-left: 0; padding-right: 0; }
+  .writing-intro > p { max-width: 75%; }
+  .creative-toolbox { min-height: 250px; }
+  .toolbox-bubbles { left: 115px; gap: 10px 8px; }
+  .toolbox-bubbles span { padding-inline: 9px; }
+  .toolbox-label strong { font-size: 23px; }
+  .creative-toolbox summary { gap: 10px; }
+  .toolbox-label small { max-width: 18em; }
+  .project-info p { max-width: none; }
+  .game-title { margin-top: 34px; }
+  .game-levels { margin-top: 22px; }
+  .theatre-caption > span:first-child { font-size: var(--read-meta); letter-spacing: .12em; }
+  .film-info h3 { font-size: 27px; }
+  .contact-links a, .contact-links button { font-size: clamp(1.125rem, 5vw, 1.625rem); }
+  .fact-list > div { grid-template-columns: 5em minmax(0, 1fr); gap: 14px; }
+  .story-cards > article { padding-left: 36px; }
+  .film-player figcaption { display: block; }
+  .film-player figcaption small { display: block; margin-top: 5px; }
+  .audience-pair article { padding: 22px; }
+  .result-note { flex-wrap: wrap; }
+  .seo-checks { gap: 8px 12px; }
+  .seo-folder { position: relative; top: auto; }
+  .seo-material { scroll-margin-top: 110px; }
+  .seo-folder-heading { gap: 12px; }
+  .seo-checks > li, .seo-checks .seo-check-group, .seo-checks .seo-subtask {
+    min-height: 28px;
+    padding-block: 3px;
+  }
+  .seo-checks .seo-subtask { padding-left: 19px; }
+}
+
+@media (max-width: 380px) {
+  .toolbox-bubbles { left: 105px; gap: 10px 6px; }
+  .toolbox-bubbles span { padding-inline: 7px; }
+  .toolbox-icon { width: 94px; }
+}
