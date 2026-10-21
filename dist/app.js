@@ -9,7 +9,24 @@ if('IntersectionObserver' in window){
 }
 const screens=[['home','封面'],['about','关于我'],['contents','目录'],['writing','文案'],['film','影像'],['work','精选案例'],['contact','联系']];
 $('.screen-dots').innerHTML=screens.map(([id,name])=>`<a href="#${id}" aria-label="${name}"><span>${name}</span><i></i></a>`).join('');
-let queued=false;function updateScroll(){const max=document.documentElement.scrollHeight-innerHeight;$('.scroll-progress').style.width=(max>0?scrollY/max*100:0)+'%';const home=$('#home').getBoundingClientRect(),about=$('#about').getBoundingClientRect(),work=$('#work').getBoundingClientRect();document.documentElement.classList.toggle('reading-intro',home.top<=1&&about.bottom>1);document.documentElement.classList.toggle('reading-work',work.top<=1&&work.bottom>1);let active='home';screens.forEach(([id])=>{if(document.getElementById(id).getBoundingClientRect().top<innerHeight*.45)active=id;});$$('.screen-dots a').forEach(a=>{const selected=a.hash==='#'+active;a.classList.toggle('current',selected);if(selected)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});$$('.site-header nav a').forEach(a=>a.classList.toggle('active',a.hash==='#'+active));queued=false;}
+let queued=false;
+function updateScroll(){
+ const root=document.documentElement,max=root.scrollHeight-innerHeight;
+ $('.scroll-progress').style.width=(max>0?scrollY/max*100:0)+'%';
+ const home=$('#home').getBoundingClientRect(),about=$('#about').getBoundingClientRect(),
+       contents=$('#contents').getBoundingClientRect(),work=$('#work').getBoundingClientRect();
+ // Re-enable native snapping as the directory enters view, not only after it aligns.
+ const inDirectory=contents.top<innerHeight*.65&&contents.bottom>innerHeight*.35;
+ root.classList.toggle('reading-directory',inDirectory);
+ root.classList.toggle('reading-intro',!inDirectory&&home.top<=1&&about.bottom>1);
+ // At the end of the cases, hand control back to native snapping for Contact.
+ root.classList.toggle('reading-work',!inDirectory&&work.top<=1&&work.bottom>innerHeight+1);
+ let active='home';
+ screens.forEach(([id])=>{if(document.getElementById(id).getBoundingClientRect().top<innerHeight*.45)active=id;});
+ $$('.screen-dots a').forEach(a=>{const selected=a.hash==='#'+active;a.classList.toggle('current',selected);if(selected)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});
+ $$('.site-header nav a').forEach(a=>a.classList.toggle('active',a.hash==='#'+active));
+ queued=false;
+}
 addEventListener('scroll',()=>{if(!queued){queued=true;requestAnimationFrame(updateScroll);}},{passive:true});addEventListener('resize',updateScroll);addEventListener('pageshow',updateScroll);updateScroll();
 const art=$('.hero-art');art.addEventListener('pointermove',e=>{if(reduced.matches||!matchMedia('(pointer:fine)').matches)return;const r=art.getBoundingClientRect(),x=e.clientX-r.left-r.width/2,y=e.clientY-r.top-r.height/2;$$('.parallax',art).forEach(el=>el.style.translate=`${x*Number(el.dataset.depth)}px ${y*Number(el.dataset.depth)}px`);});art.addEventListener('pointerleave',()=>{$$('.parallax',art).forEach(el=>el.style.translate='0 0');});
 let lastSpark=0;art.addEventListener('pointermove',e=>{if(reduced.matches||!matchMedia('(pointer:fine)').matches||performance.now()-lastSpark<110)return;lastSpark=performance.now();const s=document.createElement('span');s.className='cursor-spark';s.setAttribute('aria-hidden','true');s.textContent='✦';s.style.left=e.clientX+'px';s.style.top=e.clientY+'px';document.body.append(s);setTimeout(()=>s.remove(),850);});
