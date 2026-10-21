@@ -16,7 +16,7 @@
 .arrival-star{position:absolute;bottom:-11px;right:3%;font:72px/1 Georgia,serif;color:var(--blue);transform:rotate(-12deg);z-index:13;pointer-events:none}
 .about-intro{min-width:0;max-width:540px}
 .typed-intro p{margin:0;line-height:2;letter-spacing:.02em;color:#555f4b}
-.typed-intro .intro-name{font-family:var(--serif);font-size:27px;line-height:1.8;color:var(--ink);margin-bottom:16px}
+.typed-intro .intro-name{font-family:var(--sans);font-size:25px;font-weight:500;line-height:1.8;letter-spacing:.03em;color:var(--ink);margin-bottom:16px}
 .typed-intro .intro-belief{font-size:14px;line-height:2.15}
 .typed-intro .intro-timeline{font-size:12px;line-height:2;margin-top:14px;color:var(--muted)}
 .intro-char{position:relative}

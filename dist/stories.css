@@ -32,3 +32,15 @@ html.reading-intro{scroll-snap-type:none}
 .award-certificate img{width:100%;height:245px;object-fit:contain;display:block}
 .award-certificate figcaption{font-size:9px;color:var(--muted);padding-top:8px}
 @media(max-width:700px){.result-note-award{grid-template-columns:auto 1fr;gap:18px}.result-note-award .award-certificate{grid-column:1/-1;justify-self:center;width:min(280px,100%)}.award-certificate img{height:auto}}
+.audience-source{margin:24px 0 0;padding-top:16px;border-top:1px solid #bdc8b3}.audience-source img{display:block;width:100%;height:190px;object-fit:cover;object-position:top}.audience-source figcaption{font-size:9px;line-height:1.7;color:var(--muted);padding-top:8px}.case-cover.sports img,.case-cover.wtt-macao-match img{object-fit:cover;object-position:center}.case-cover.wtt-macao-match img{background:#191b26}
+/* Keep the final chapter and the reading recommendation visually connected. */
+.case-page #case-main>.story-section:has(+ #next-project){border-bottom:0;min-height:0;justify-content:flex-start;padding-bottom:16px}
+.case-page #next-project{border-top:0;min-height:0;justify-content:flex-start;padding-top:40px;padding-bottom:56px;scroll-snap-stop:normal}
+@media(max-width:700px){.case-page #case-main>.story-section:has(+ #next-project){padding-bottom:12px}.case-page #next-project{padding-top:28px;padding-bottom:40px}}
+.voiceover p{color:var(--ink);transition:color .2s}
+.voiceover p::first-line{color:inherit}
+.voiceover p:hover{color:var(--blue)}
+.original-script-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start}
+.original-script-grid .zoom-art{padding:8px;background:#fff}
+.original-script-grid .zoom-art img{height:auto;max-height:none;object-fit:contain}
+@media(max-width:700px){.original-script-grid{grid-template-columns:1fr;gap:28px}}
